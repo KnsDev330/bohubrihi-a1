@@ -31,7 +31,14 @@ function createProduct({ id, name, price, img }) {
     addClickListeners();
 }
 
+function addToCart(e) {
+    const id = e.target.getAttribute("product-id");
+    cart.addItem(id);
+}
+
 function addClickListeners() {
     const products = document.getElementsByClassName('product');
-    console.log(products.length)
+    for (v of products) {
+        v.addEventListener('click', addToCart)
+    }
 }
