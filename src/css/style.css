@@ -4,3 +4,47 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    margin: 50px;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    padding: 10px;
+    border-radius: 7px;
+    flex-direction: column;
+    background-color: #00000010;
+    transition: 0.3s;
+}
+
+.product:hover {
+    box-shadow: 0 0 20px 0px #9393939e;
+}
+
+.product h3 {
+    margin: 20px 0;
+}
+
+.addToCartBtn {
+    margin-top: auto;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: #00e291;
+    transition: 0.3s;
+}
+
+.addToCartBtn:hover {
+    background-color: #00cd82;
+}
