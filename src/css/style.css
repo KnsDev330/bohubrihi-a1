@@ -25,10 +25,6 @@ body {
     transition: 0.3s;
 }
 
-.product:hover {
-    box-shadow: 0 0 20px 0px #9393939e;
-}
-
 .product h3 {
     margin: 20px 0;
 }
@@ -47,4 +43,18 @@ body {
 
 .addToCartBtn:hover {
     background-color: #00cd82;
+}
+
+.cart-div {
+    width: 600px;
+    padding: 10px 20px;
+    min-height: 100px;
+    background-color: rgb(234 234 234 / 57%);
+}
+
+.cart-img {
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    padding: 5px;
 }
